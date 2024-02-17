@@ -1,0 +1,99 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(163, 248, 160);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+}
+
+header {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  select {
+    padding: 8px;
+    color: rgb(209, 195, 195);
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  border: 3px solid #d1ece6;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.2s;
+  background-color: rgb(212, 234, 253);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity-actions {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-actions button {
+  background-color: #6d72a3;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(230, 209, 209);
+  padding: 10px 0;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+aside {
+  background-color: #e1fc6c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+aside h2 {
+ 
+  margin-bottom: 10px;
+}
